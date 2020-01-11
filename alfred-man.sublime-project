@@ -1,0 +1,23 @@
+{
+	"folders":
+	[
+		{
+			"name": "Alfred Man",
+			"path": "."
+		},
+		{
+			"name": "App",
+			"path": "./src"
+		}
+	],
+	"settings":
+	{
+		"LSP":
+		{
+			"gopls":
+			{
+				"enabled": true
+			}
+		}
+	}
+}

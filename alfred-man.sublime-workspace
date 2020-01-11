@@ -1,0 +1,564 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"repl",
+				"replacements"
+			],
+			[
+				"da",
+				"dataType"
+			],
+			[
+				"B",
+				"Bool"
+			],
+			[
+				"Tet",
+				"TextInput"
+			],
+			[
+				"s",
+				"snippetTemplate"
+			],
+			[
+				"add",
+				"addWidget()"
+			],
+			[
+				"var",
+				"variables"
+			],
+			[
+				"cl",
+				"close"
+			],
+			[
+				"ac",
+				"accept"
+			],
+			[
+				"En",
+				"Entry"
+			],
+			[
+				"Re",
+				"Resize"
+			],
+			[
+				"C",
+				"CenterOnScreen"
+			],
+			[
+				"S",
+				"SetFixedSize"
+			],
+			[
+				"A",
+				"Append"
+			],
+			[
+				"Sea",
+				"SearchURL"
+			],
+			[
+				"Pack",
+				"PackageDetails"
+			],
+			[
+				"New",
+				"NewPackageRequest"
+			],
+			[
+				"N",
+				"NewClient"
+			],
+			[
+				"es",
+				"escape_regex"
+			],
+			[
+				"comment",
+				"comment_delimiter"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main.go",
+			"settings":
+			{
+				"buffer_size": 644,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/cmd/pdf.go",
+			"settings":
+			{
+				"buffer_size": 213,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "alfred-man.sublime-project",
+			"settings":
+			{
+				"buffer_size": 195,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"lsp",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pep",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"them",
+				"UI: Select Color Scheme"
+			],
+			[
+				"guna",
+				"Guna"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				":",
+				":$ - EOF"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"lap",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"syntax: bo",
+				"Set Syntax: Bourne Again Shell (bash)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"new",
+				"Sudoku: New Game"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"sud",
+				"Sudoku: New Game"
+			],
+			[
+				"an",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"form",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"th",
+				"UI: Select Theme"
+			],
+			[
+				"ins",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 137.0,
+		"history":
+		[
+			"view.run_command('comment_highlighter')",
+			"view.scope_name(view.sel()[0].begin())",
+			"view.run_command('comment_highlighter')",
+			"view.scope_name(view.sel()[0].begin())",
+			"view.run_command('comment_highlighter')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/zacharyschulze/Documents/Projects/Alfred-Man",
+		"/Users/zacharyschulze/Documents/Projects/Alfred-Man/src",
+		"/Users/zacharyschulze/Documents/Projects/Alfred-Man/src/cmd"
+	],
+	"file_history":
+	[
+		"/Users/zacharyschulze/Documents/Projects/Alfred-Man/alfred-man.sublime-project",
+		"/Users/zacharyschulze/Documents/Projects/Uni-Call/src/Uni Call/Podfile",
+		"/Users/zacharyschulze/.zshrc",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/CommentHighlighter/comment_highlighter.py",
+		"/Users/zacharyschulze/Documents/Projects/scopy/clip/clip.go",
+		"/Users/zacharyschulze/Documents/Projects/scopy/cmd/copy.go",
+		"/Users/zacharyschulze/Desktop/A.rtf",
+		"/Users/zacharyschulze/.go/src/github.com/deanishe/alfred-ssh/m",
+		"/Users/zacharyschulze/Downloads/temp/FileManager.py",
+		"/Users/zacharyschulze/Downloads/temp/FileManager.sublime-commands",
+		"/Users/zacharyschulze/Library/Application Support/Hazel/16777223-29652.hazeldb",
+		"/Users/zacharyschulze/Dropbox/Alfred/Alfred.alfredpreferences/workflows/user.workflow.AD406681-48ED-4724-AF9A-4BDB86BF2F21/acpython.py",
+		"/Users/zacharyschulze/Dropbox/Alfred/Alfred.alfredpreferences/workflows/user.workflow.AD406681-48ED-4724-AF9A-4BDB86BF2F21/acshell.sh",
+		"/Users/zacharyschulze/Dropbox/Alfred/Alfred.alfredpreferences/workflows/user.workflow.D5F1212D-8165-41FD-A9D2-A185104F5D1C/emoji_search.py",
+		"/Users/zacharyschulze/Downloads/archives/info.plist",
+		"/Users/zacharyschulze/Downloads/Star.Wars.Episode.IX.The.Rise.of.Skywalker.2019.1080p.V3.CAM.KORSUB.H264.AC3.Will1869 [IPT].torrent",
+		"/Users/zacharyschulze/Downloads/Manipulate Clipboard.kmmacros.html",
+		"/Users/zacharyschulze/Documents/Projects/pkgcontrol/cli/cmd/search.go",
+		"/Users/zacharyschulze/Documents/Projects/pkgcontrol/cli/cmd/root.go",
+		"/Users/zacharyschulze/Documents/Projects/packagecontrol/package-control.go",
+		"/Users/zacharyschulze/Documents/Projects/packagecontrol/cli/cmd/root.go",
+		"/Users/zacharyschulze/Documents/Projects/packagecontrol/main.go",
+		"/usr/local/opt/go/libexec/src/net/http/request.go",
+		"/Users/zacharyschulze/Dropbox/Alfred/Alfred.alfredpreferences/workflows/user.workflow.EDDFC1C1-BB5F-495E-BF0C-1A412B3155F0/info.plist",
+		"/Applications/Sublime Text.app/Contents/Info.plist",
+		"/Users/zacharyschulze/Downloads/macbook_setup.sh",
+		"/Users/zacharyschulze/Documents/Projects/Icebreaker/icebreaker.sublime-project",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/zzz A File Icon zzz/patches/general/multi/Adaptive.sublime-theme",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/zzz A File Icon zzz/aliases/YAML (Docker).sublime-syntax",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/zzz A File Icon zzz/aliases/Shell Script (Docker).sublime-syntax",
+		"/Users/zacharyschulze/Documents/Projects/Icebreaker/.gitignore",
+		"/Users/zacharyschulze/Documents/Projects/Icebreaker/apps/api/models/scan_request.go",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Merge/Packages/User/Preferences.sublime-settings",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/CommentHighlighter/resources/CommentHighlighter.sublime-syntax",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/CommentHighlighter/CommentHighlighter.sublime-syntax",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/Sudoku/resources/Monokai.sublime-color-scheme",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/Sudoku/resources/syntax/Sudoku.sublime-syntax",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/Sudoku/sudoku.py",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/User/comment_highlighter.sublime-color-scheme",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/User/comment_highlighter.py",
+		"/Users/zacharyschulze/Documents/Projects/Icebreaker/apps/api/api.go",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/User/_*.sublime-color-scheme",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/Godef/Godef.sublime-settings",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/User/Gofmt.sublime-settings",
+		"/Users/zacharyschulze/Library/Application Support/Sublime Text/Packages/Gofmt/Gofmt.sublime-settings"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								644,
+								644
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"gopls": "go"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/Go/Go.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/cmd/pdf.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.go"
+								}
+							],
+							"git_gutter_is_enabled": true,
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"gopls": "go"
+							},
+							"open_with_edit": true,
+							"show_definitions": false,
+							"syntax": "Packages/Go/Go.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "alfred-man.sublime-project",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.diagnostics":
+	{
+		"height": 115.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.gofmt":
+	{
+		"height": 0.0
+	},
+	"output.language servers":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "alfred-man.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 361.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -18,5 +18,5 @@ package main
 import "alfredman/cmd"
 
 func main() {
-  cmd.Execute()
+	cmd.Execute()
 }
