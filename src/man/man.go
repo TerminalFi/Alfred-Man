@@ -50,7 +50,6 @@ func (m *ManInterface) GetManDatabase() error {
 		}
 
 		for _, name := range strings.Split(pages[0], ",") {
-			// log.Println(name)
 			command := &Command{
 				Name:        RemoveNonAscii(strings.TrimSpace(name)),
 				Description: RemoveNonAscii(pages[1]),

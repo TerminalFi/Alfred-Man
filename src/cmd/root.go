@@ -99,6 +99,7 @@ func Execute() {
 
 func init() {
   wf = aw.New(update.GitHub(repo))
+  wf.Args()
 
   // Cobra also supports local flags, which will only run
   // when this action is called directly.
