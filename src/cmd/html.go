@@ -4,11 +4,12 @@ import (
 	"alfredman/man"
 	"fmt"
 	"os"
+	"path"
 
 	"github.com/spf13/cobra"
 )
 
-const htmlDir = "./data/html"
+const htmlDir = "data/html"
 
 var htmlCmd = &cobra.Command{
 	Use:    "html",
@@ -20,7 +21,7 @@ var htmlCmd = &cobra.Command{
 func htmlRun(cmd *cobra.Command, args []string) error {
 	page, _ := cmd.Flags().GetString("page")
 	section, _ := cmd.Flags().GetString("section")
-	htmlPath, err := man.GenerateHTML(section, page)
+	htmlPath, err := man.GenerateHTML(section, page, storageDir)
 	if err != nil {
 		return err
 	}
@@ -37,7 +38,8 @@ func init() {
 }
 
 func validateHTMLFolder(cmd *cobra.Command, args []string) {
-	if _, err := os.Stat(htmlDir); os.IsNotExist(err) {
-		os.MkdirAll(htmlDir, os.ModePerm)
+	storageDir = path.Join(cacheDir, htmlDir)
+	if _, err := os.Stat(storageDir); os.IsNotExist(err) {
+		os.MkdirAll(storageDir, os.ModePerm)
 	}
 }

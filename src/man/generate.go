@@ -12,16 +12,16 @@ import (
 	"github.com/b4b4r07/go-pipe"
 )
 
-func GenerateHTML(section string, page string) (string, error) {
-	return generate(section, page, "html")
+func GenerateHTML(section string, page string, htmlPath string) (string, error) {
+	return generate(section, page, "html", htmlPath)
 }
 
-func GeneratePDF(section string, page string) (string, error) {
-	return generate(section, page, "pdf")
+func GeneratePDF(section string, page string, pdfPath string) (string, error) {
+	return generate(section, page, "pdf", pdfPath)
 }
 
-func generate(section string, page string, fileType string) (string, error) {
-	path := fmt.Sprintf("data/%s/%s-%s.%s", fileType, section, page, fileType)
+func generate(section string, page string, fileType string, filePath string) (string, error) {
+	path := fmt.Sprintf("%s/%s-%s.%s", filePath, section, page, fileType)
 	info, err := os.Stat(path)
 	if os.IsNotExist(err) {
 		err = createFile(section, page, path, fileType)

@@ -34,6 +34,8 @@ var (
   doCheck    bool
   doDownload bool
   query      string
+  cacheDir   string
+  storageDir string
 
   cacheName   = "man_pages.json"  // Filename of cached repo list
   maxResults  = 200               // Number of results sent to Alfred
@@ -99,6 +101,7 @@ func Execute() {
 
 func init() {
   wf = aw.New(update.GitHub(repo))
+  cacheDir = wf.CacheDir()
   wf.Args()
 
   // Cobra also supports local flags, which will only run

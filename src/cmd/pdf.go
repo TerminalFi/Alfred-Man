@@ -4,11 +4,12 @@ import (
 	"alfredman/man"
 	"fmt"
 	"os"
+	"path"
 
 	"github.com/spf13/cobra"
 )
 
-const pdfDir = "./data/pdf"
+const pdfDir = "data/pdf"
 
 var pdfCmd = &cobra.Command{
 	Use:    "pdf",
@@ -20,7 +21,7 @@ var pdfCmd = &cobra.Command{
 func pdfRun(cmd *cobra.Command, args []string) error {
 	page, _ := cmd.Flags().GetString("page")
 	section, _ := cmd.Flags().GetString("section")
-	pdfPath, err := man.GeneratePDF(section, page)
+	pdfPath, err := man.GeneratePDF(section, page, storageDir)
 	if err != nil {
 		return err
 	}
@@ -37,7 +38,8 @@ func init() {
 }
 
 func validatePDFFolder(cmd *cobra.Command, args []string) {
-	if _, err := os.Stat(pdfDir); os.IsNotExist(err) {
-		os.MkdirAll(pdfDir, os.ModePerm)
+	storageDir = path.Join(cacheDir, pdfDir)
+	if _, err := os.Stat(storageDir); os.IsNotExist(err) {
+		os.MkdirAll(storageDir, os.ModePerm)
 	}
 }
