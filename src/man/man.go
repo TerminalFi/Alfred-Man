@@ -3,7 +3,6 @@ package man
 import (
 	"bytes"
 	"fmt"
-	"log"
 	"os/exec"
 	"regexp"
 	"strings"
@@ -42,9 +41,10 @@ func (m *ManInterface) GetManDatabase() error {
 		return err
 	}
 
+	var re = regexp.MustCompile(`(?m)^([^a-zA-Z0-9\\s]+)|([^a-zA-Z0-9\\s]+)$`)
+
 	for _, item := range strings.Split(outb.String(), "\n") {
 		pages := strings.Split(item, " - ")
-		log.Println(pages)
 		if len(pages) != 2 {
 			continue
 		}
@@ -52,7 +52,7 @@ func (m *ManInterface) GetManDatabase() error {
 		for _, name := range strings.Split(pages[0], ",") {
 			command := &Command{
 				Name:        RemoveNonAscii(strings.TrimSpace(name)),
-				Description: RemoveNonAscii(pages[1]),
+				Description: RemoveNonAscii(re.ReplaceAllString(pages[1], "")),
 				ManURI:      manURI(RemoveNonAscii(strings.TrimSpace(name))),
 				ManArg:      manArg(RemoveNonAscii(strings.TrimSpace(name))),
 			}
