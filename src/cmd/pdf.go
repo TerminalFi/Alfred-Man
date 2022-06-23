@@ -18,9 +18,17 @@ var pdfCmd = &cobra.Command{
 	RunE:   pdfRun,
 }
 
-func pdfRun(cmd *cobra.Command, args []string) error {
-	page, _ := cmd.Flags().GetString("page")
-	section, _ := cmd.Flags().GetString("section")
+func pdfRun(cmd *cobra.Command, _ []string) error {
+	page, err := cmd.Flags().GetString("page")
+	if err != nil {
+		return err
+	}
+
+	section, err := cmd.Flags().GetString("section")
+	if err != nil {
+		return err
+	}
+
 	pdfPath, err := man.GeneratePDF(section, page, storageDir)
 	if err != nil {
 		return err
@@ -37,7 +45,7 @@ func init() {
 	rootCmd.AddCommand(pdfCmd)
 }
 
-func validatePDFFolder(cmd *cobra.Command, args []string) {
+func validatePDFFolder(_ *cobra.Command, _ []string) {
 	storageDir = path.Join(cacheDir, pdfDir)
 	if _, err := os.Stat(storageDir); os.IsNotExist(err) {
 		os.MkdirAll(storageDir, os.ModePerm)

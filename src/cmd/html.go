@@ -18,7 +18,7 @@ var htmlCmd = &cobra.Command{
 	RunE:   htmlRun,
 }
 
-func htmlRun(cmd *cobra.Command, args []string) error {
+func htmlRun(cmd *cobra.Command, _ []string) error {
 	page, _ := cmd.Flags().GetString("page")
 	section, _ := cmd.Flags().GetString("section")
 	htmlPath, err := man.GenerateHTML(section, page, storageDir)
@@ -37,7 +37,7 @@ func init() {
 	rootCmd.AddCommand(htmlCmd)
 }
 
-func validateHTMLFolder(cmd *cobra.Command, args []string) {
+func validateHTMLFolder(_ *cobra.Command, _ []string) {
 	storageDir = path.Join(cacheDir, htmlDir)
 	if _, err := os.Stat(storageDir); os.IsNotExist(err) {
 		os.MkdirAll(storageDir, os.ModePerm)

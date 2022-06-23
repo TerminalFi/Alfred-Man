@@ -75,12 +75,12 @@ func createFile(section string, page string, path string, fileType string) error
 			return errors.New(errb.String())
 		}
 		defer f.Close()
-		f.Write([]byte(outb.String()))
+		f.Write(outb.Bytes())
 	}
 
 	return nil
 }
 
 func isOlderThan30Day(t time.Time) bool {
-	return time.Now().Sub(t) > (30 * (24 * time.Hour))
+	return time.Since(t) > (30 * (24 * time.Hour))
 }

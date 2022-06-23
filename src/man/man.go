@@ -41,7 +41,7 @@ func (m *ManInterface) GetManDatabase() error {
 		return err
 	}
 
-	var re = regexp.MustCompile(`(?m)^([^a-zA-Z0-9\\s]+)|([^a-zA-Z0-9\\s]+)$`)
+	var re = regexp.MustCompile(`(?im)^([^a-z0-9\s]+)$`)
 
 	for _, item := range strings.Split(outb.String(), "\n") {
 		pages := strings.Split(item, " - ")
@@ -51,10 +51,10 @@ func (m *ManInterface) GetManDatabase() error {
 
 		for _, name := range strings.Split(pages[0], ",") {
 			command := &Command{
-				Name:        RemoveNonAscii(strings.TrimSpace(name)),
-				Description: RemoveNonAscii(re.ReplaceAllString(pages[1], "")),
-				ManURI:      manURI(RemoveNonAscii(strings.TrimSpace(name))),
-				ManArg:      manArg(RemoveNonAscii(strings.TrimSpace(name))),
+				Name:        removeNonAscii(strings.TrimSpace(name)),
+				Description: removeNonAscii(re.ReplaceAllString(pages[1], "")),
+				ManURI:      manURI(removeNonAscii(strings.TrimSpace(name))),
+				ManArg:      manArg(removeNonAscii(strings.TrimSpace(name))),
 			}
 			m.Commands = append(m.Commands, command)
 		}
@@ -63,8 +63,8 @@ func (m *ManInterface) GetManDatabase() error {
 	return nil
 }
 
-// RemoveNonAscii removes all non-ascii characters from a string
-func RemoveNonAscii(data string) string {
+// removeNonAscii removes all non-ascii characters from a string
+func removeNonAscii(data string) string {
 	return strings.Map(func(r rune) rune {
 		if r > unicode.MaxASCII {
 			return -1
